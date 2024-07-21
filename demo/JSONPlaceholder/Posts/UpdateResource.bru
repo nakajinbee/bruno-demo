@@ -6,6 +6,20 @@ meta {
 
 put {
   url: https://jsonplaceholder.typicode.com/posts/1
-  body: none
+  body: json
   auth: none
+}
+
+headers {
+  Content-type: application/json; charset=UTF-8
+}
+
+body:json {
+  {
+    "id":1,
+    "title": "foo",
+    "body": "bar",
+    "userId": 1
+  }
+  
 }
